@@ -7,6 +7,6 @@
       "email": "cimon77@gmail.com"
     }
   ],
-  "minimum-stability": "master",
+  "minimum-stability": "dev",
   "require": {}
 }
