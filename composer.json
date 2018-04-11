@@ -1,0 +1,12 @@
+{
+  "name": "cimon77/timezones",
+  "description": "First Package",
+  "authors": [
+    {
+      "name": "Simon Shrestha",
+      "email": "cimon77@gmail.com"
+    }
+  ],
+  "minimum-stability": "master",
+  "require": {}
+}
