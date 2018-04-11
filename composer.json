@@ -8,13 +8,6 @@
     }
   ],
   "license": "MIT",
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Cimon77\\Timezones\\TimezonesServiceProvider"
-      ]
-    }
-  },
   "minimum-stability": "dev",
   "require": {}
 }
