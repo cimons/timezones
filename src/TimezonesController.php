@@ -1,6 +1,6 @@
 <?php
 
-namespace Cimon77\Timezones;
+namespace Cimons\Timezones;
 
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;

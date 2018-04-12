@@ -1,5 +1,5 @@
 {
-  "name": "cimon77/timezones",
+  "name": "cimons/timezones",
   "description": "First Package",
   "authors": [
     {
@@ -7,6 +7,16 @@
       "email": "cimon77@gmail.com"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "Cimons\\Timezones\\": "src/"
+    }
+  },
+  "extra": {
+    "providers": [
+      "Cimons\\Timezones\\TimezonesServiceProvider"
+    ]
+  },
   "license": "MIT",
   "minimum-stability": "dev",
   "require": {}

@@ -1,11 +1,15 @@
 <?php
 
-namespace Cimon77\Timezones;
+namespace Cimons\Timezones;
 
 use Illuminate\Support\ServiceProvider;
 
 class TimezonesServiceProvider extends ServiceProvider
 {
+    public function __construct()
+    {
+
+    }
     /**
      * Bootstrap the application services.
      *
@@ -15,7 +19,7 @@ class TimezonesServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/views', 'timezones');
         $this->publishes([
-            __DIR__.'/views' => base_path('resources/views/cimon77/timezones'),
+            __DIR__.'/views' => base_path('resources/views/cimons/timezones'),
         ]);
     }
 
@@ -26,7 +30,11 @@ class TimezonesServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        echo '<pre>';
+        var_dump('here');
+        echo '</pre>';
+        die;
         include __DIR__.'/routes/web.php';
-        $this->app->make('Cimon77\Timezones\TimezonesController');
+        $this->app->make('Cimons\Timezones\TimezonesController');
     }
 }
