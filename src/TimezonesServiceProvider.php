@@ -6,10 +6,6 @@ use Illuminate\Support\ServiceProvider;
 
 class TimezonesServiceProvider extends ServiceProvider
 {
-    public function __construct()
-    {
-
-    }
     /**
      * Bootstrap the application services.
      *
@@ -30,10 +26,6 @@ class TimezonesServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        echo '<pre>';
-        var_dump('here');
-        echo '</pre>';
-        die;
         include __DIR__.'/routes/web.php';
         $this->app->make('Cimons\Timezones\TimezonesController');
     }
